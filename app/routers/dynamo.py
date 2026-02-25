@@ -30,4 +30,4 @@ async def write_dynamo(value: str):
             TABLE_DATA_VALUE: value,
         }
     )
-    return {"message": "Value set successfully"}
+    return {"message": f"Value set successfully to {value}"}
