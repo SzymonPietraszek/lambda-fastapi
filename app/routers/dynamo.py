@@ -4,8 +4,8 @@ from fastapi import APIRouter
 
 router = APIRouter()
 
-TABLE_NAME = os.environ["TABLE_NAME"]
-TABLE_PK = os.environ["TABLE_PK"]
+TABLE_NAME = os.environ.get("TABLE_NAME")
+TABLE_PK = os.environ.get("TABLE_PK")
 TABLE_PK_VALUE = "data"
 TABLE_DATA_VALUE = "value"
 
